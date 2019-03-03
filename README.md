@@ -1,27 +1,83 @@
-# 4641Proj2
-Download the github repository :https://github.com/jminowa3/4641Proj2
+ABAGAIL
+=======
 
-Download ANT to compile files
-open the folder ABAGAIL-master with your favorite IDE
+[![Build Status](https://travis-ci.org/pushkar/ABAGAIL.svg?branch=master)](https://travis-ci.org/pushkar/ABAGAIL)
 
-Part one
+The library contains a number of interconnected Java packages that implement machine learning and artificial intelligence algorithms. These are artificial intelligence algorithms implemented for the kind of people that like to implement algorithms themselves.
 
-Open Assignment two, and run the program with command arguments
-java -cp ABAGAIL.jar Assignment2.AssignmentTwo and fill in the arg parameters with
-For RHC: hidden layers #, iteration #, 'RHC'
-For GA: hidden layers #, iterations #, 'ga'
-For SA: hidden layers #, iterations #, 'sa'
-Then you can change the values of each hyperparameter in the code
+Usage
+------
 
-Example:
-java -cp ABAGAIL.jar Assignment2.AssignmentTwo 2 2000 sa
-which runs a neural net with 2 hidden layers, 2000 iteration with hyperparameter values used in the code
+* See [FAQ](https://github.com/pushkar/ABAGAIL/blob/master/faq.md)
+* See [Wiki](https://github.com/pushkar/ABAGAIL/wiki)
 
-It will output values of weights, number of correctly and incorrectly classified, and training and testing time
+Issues
+-------
 
-Part two
-can be run using 
-ex:
-java -cp ABAGAIL.jar opt.test.knapsacktest
+See [Issues page](https://github.com/pushkar/ABAGAIL/issues?state=open).
 
-open either knapsacktest.java, flipfloptest.java or travelingsalesmantest.java, and run them as is, it will store in a csv file with each of the algorithm's fitnesses as well as their hyperparameters, and in command line it will print best runtime and fitness evaluation with each hyperparameter
+Contributing
+------------
+
+1. Fork it.
+2. Create a branch (`git checkout -b my_branch`)
+3. Commit your changes (`git commit -am "Awesome feature"`)
+4. Push to the branch (`git push origin my_branch`)
+5. Open a [Pull Request][1]
+6. Enjoy a refreshing Diet Coke and wait 
+
+Features
+========
+
+### Hidden Markov Models
+
+* Baum-Welch reestimation algorithm, scaled forward-backward algorithm, Viterbi algorithm
+* Support for Input-Output Hidden Markov Models
+* Write your own output or transition probability distribution or use the provided distributions, including neural network based conditional probability distributions
+* Neural Networks
+
+### Feed-forward backpropagation neural networks of arbitrary topology
+* Configurable error functions with sum of squares, weighted sum of squares
+* Multiple activation functions with logistic sigmoid, linear, tanh, and soft max
+* Choose your weight update rule with standard update rule, standard update rule with momentum, Quickprop, RPROP
+* Online and batch training
+* Support Vector Machines
+
+### Fast training with the sequential minimal optimization algorithm
+* Support for linear, polynomial, tanh, radial basis function kernels
+* Decision Trees
+
+### Information gain or GINI index split criteria
+* Binary or all attribute value splitting
+* Chi-square signifigance test pruning with configurable confidence levels
+* Boosted decision stumps with AdaBoost
+* K Nearest Neighbors
+
+### Fast kd-tree implementation for instance based algorithms of all kinds
+* KNN Classifier with weighted or non-weighted classification, customizable distance function
+* Linear Algebra Algorithms
+
+### Basic matrix and vector math, a variety of matrix decompositions based on the standard algorithms
+* Solve square systems, upper triangular systems, lower triangular systems, least squares
+* Singular Value Decomposition, QR Decomposition, LU Decomposition, Schur Decomposition, Symmetric Eigenvalue Decomposition, Cholesky Factorization
+* Make your own matrix decomposition with the easy to use Householder Reflection and Givens Rotation classes
+* Optimization Algorithms
+
+### Randomized hill climbing, simulated annealing, genetic algorithms, and discrete dependency tree MIMIC
+* Make your own crossover functions, mutation functions, neighbor functions, probability distributions, or use the provided ones.
+* Optimize the weights of neural networks and solve travelling salesman problems
+* Graph Algorithms
+
+### Kruskals MST and DFS
+* Clustering Algorithms
+
+### EM with gaussian mixtures, K-means
+* Data Preprocessing
+
+### PCA, ICA, LDA, Randomized Projections
+* Convert from continuous to discrete, discrete to binary
+* Reinforcement Learning
+
+### Value and policy iteration for Markov decision processes
+
+[1]: https://help.github.com/articles/using-pull-requests
